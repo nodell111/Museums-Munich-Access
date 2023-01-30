@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>State Museum of Egyptian Art</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <!-- Styles -->
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+  <link href="carousel.css" rel="stylesheet" />
+
+  <style>
+    /* important for carousel navigation buttons to appear on white background */
+    .carousel-control-next,
+    .carousel-control-prev
+        {filter: invert(100%);}
+    /* caption */
+    .carousel-caption {
+        opacity: 0;
+        -webkit-transition: all 0.2s;
+        transition: all 0.2s;
+        color: #fff;
+        }
+    .carousel-inner:hover .carousel-caption {
+        text-align: center;
+        font-size: 75px;
+        font-weight: 600;
+        color: white;
+        padding: 10px;
+        position: end;
+        justify-items: bottom;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #282828;
+        opacity: 0.75 
+        ;
+      }
+
+    
+
+  </style>
+
+</head>
+
+<body>
+  <header>
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" style="padding-bottom: 0.5rem">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Munich Museum Accessiblity</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index-2.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown"
+                aria-expanded="false">Museums</a>
+              <ul class="dropdown-menu" aria-labelledby="opdown01">
+                <li><a class="dropdown-item" href="State Museum of Egyptian Art.html">State Museum of Egyptian Art</a>
+                </li>
+                <li><a class="dropdown-item" href="Pinakothek der Moderne.html">Pinakothek der Moderne</a></li>
+                <li><a class="dropdown-item" href="Residenzmuseum.html">Residenzmuseum</a></li>
+                <li><a class="dropdown-item" href="Sammlung Schack.html">Sammlung Schack</a></li>
+
+
+
+              </ul>
+
+        </div>
+      </div>
+    </nav>
+
+
+  </header>
+  <main>
+    <div class="container marketing" style="margin-top: 20px">
+      <div class="container-fluid !direction !spacing">
+        <h1 class="display-6">
+          State Museum of Egyptian Art
+          <br><small class="text-muted">Staatliches Museum Ägyptischer Kunst</small>
+        </h1>
+
+        <hr>
+        <div class="row justify-content-start align-items-start g-2.5">
+          <!-- map - do not move -->
+          <div class="col">
+            <div id='map' style='width: 800px; height: 700px; margin: 0 auto;'></div>
+          </div>
+          <!-- end map - do not move -->
+          <hr class="featurette-divider">
+          <div class="row gy-3">
+            <div class="col-sm">
+              <div class="card bg-light h-100">
+                <div class="card-body">
+
+                  <h3 class="card-title">Getting there</h3>
+                  <p>
+                  <p><strong><em>Public Transportation</em></strong>
+                    <br><strong> U-bahn:</strong> Königsplatz, U2/U8
+                    <br><strong>Tram:</strong> Karolinenplatz, Lines 27/28
+                    <br><strong>Bus:</strong> Pinakotheke, Lines 58/68/100
+                    <br><strong>S-Bahn and all rail services:</strong> Hauptbahnhof, 10 minute walk
+                  </p>
+                  <p><strong><em>Parking</em></strong>
+                    <br> Paid parking available surrounding the museum.
+                    <br> Accessible parking available at Arcisstraße 16
+                  </p>
+                  <p><strong>Gabelsbergerstraße 35,
+                      <br>80333 München, Germany</strong></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="card bg-light h-100">
+                <div class="card-body">
+
+                  <h3 class="card-title">Museum Information</h3>
+                  <p>
+                  <p><strong><em>Admission Fees</em></strong>
+                    <br><em>Admission includes audio guide</em>
+                    <br>Adults: 7€
+                    <br>Reduced: 5€
+                    <br> Sunday: 1€
+                    <br> Under 18: Free
+                  </p>
+                  <p><strong><em>Opening Hours</em></strong>
+                    <br> Monday: Closed
+                    <br> Tuesday: 10:00 to 20:00
+                    <br> Wednesday-Sunday: 10:00 to 18:00
+                  </p>
+                  <p><strong><em>Contact Information</em></strong>
+                    <br> +49 89 28927-626
+                    <br> info@smaek.de
+                    <br> <a href="https://smaek.de/" class="link-primary"> https://smaek.de/</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+          <hr class="featurette-divider">
+          <!-- <div class="row justify-content-start align-items-start g-1"> -->
+            <div class="row">
+              <div class="col">
+                  <div id="carouselId" class="carousel slide">
+                    <div class="carousel-inner" role="listbox">
+                      <div class="carousel-item active" halign="center">
+                        <img src="egypt/egypt_3d.jpg" class="d-block" height="800px" width="1000px" alt="First slide" style="object-fit: scale-down;" >
+                        <div class="carousel-caption bottom-0">
+                        <h4>3D Museum Floor Plan </h4>
+                      </div>
+                    </div>
+                    <div class="carousel-item"  halign=" center">
+                      <img src="egypt/egypt_ground.jpg" class="d-block" height="679px" width="1000px" alt="Second slide" style="object-fit: scale-down;">
+                      <div class="carousel-caption bottom-0">
+                      <h4>Ground Floor Plan</h4>
+                    </div>
+                  </div>
+                  <div class="carousel-item" halign="center">
+                    <img src="egypt/egypt_under.jpg" class="d-block" height="679px" width="1000px" alt="Third slide" style="object-fit: scale-down;">
+                    <div class="carousel-caption bottom-0">
+                      <h4>Basement Floor Plan</h4>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row gy-3">
+          <div class="col-sm">
+            <div class="card bg-light h-100">
+              <div class="card-body">
+
+                <h3 class="card-title">General Accessiblity Information</h3>
+                <ul>
+                  <li>Tours: Variety of tours available including those aimed at Visually Impaired and the Deaf </li>
+                  <li>On Site Assitance: Available</li>
+                  <li>Accessible Toilet: Available and well marked</li>
+                  <li>Elevator: Yes </li>
+                  <li>Guide Dogs: Allowed with registration</li>
+                  <li> Building is completely wheelchair accessible</li>
+                  <li>Elevator located at back entrace of building, accessible from Arcisstraße and Gabelsbergerstraße
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card bg-light h-100">
+              <div class="card-body">
+
+                <h3 class="card-title">Information for Blind and Visually Impaired</h3>
+
+                <ul>
+                  <li>Every exhbition hall includes braille inscriptions (in German) of the keywords of the room</li>
+                  <li>"Grasping Egypt" Exhibition room: interactive tactile exhibit</li>
+                  <li>Elevator has audio component and raised buttons</li>
+                  <li>Tactile guidance system present throughout building</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card bg-light h-100">
+              <div class="card-body">
+
+                <h3 class="card-title">Information for Mobility Impaired</h3>
+
+                <ul>
+                  <li>Limited number of wheelchairs, rolling walkers and rubber-footed canes available for use</li>
+                  <li>Folding chairs available to bring into exhibition rooms</li>
+                  <li>Entire museum is accessible without steps</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        
+      </div>
+      <hr class="featurette-divider">
+      <div class="row justify-content-center align-items-center g-2">
+        <div class="row">
+          <div class="col">
+            <div id="carouselId-2" class="carousel slide">
+              <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active" halign="center">
+                  <img src="MAIN EHIBITS IMAGES/EGYPTIAN/grasping.jpeg" class="d-block" height="500px" alt="First slide" style="object-fit: scale-down;" >
+                  <div class="carousel-caption bottom-0">
+                    <h4>Ägypten (Er)Fassen - Grasping Egypt Exhibit</h4>
+                  </div>
+                </div>
+                <div class="carousel-item"  halign=" center">
+                  <img src="MAIN EHIBITS IMAGES/EGYPTIAN/highlights_horus.jpeg" class="d-block" height="500px" alt="Second slide" style="object-fit: scale-down;">
+                  <div class="carousel-caption bottom-0">
+                    <h4>Standing walking figure of the god 
+                      <br>Horus</h4>
+                  </div>
+                </div>
+                <div class="carousel-item" halign="center">
+                  <img src="MAIN EHIBITS IMAGES/EGYPTIAN/23_highlights_satdjehuti.jpeg" class="d-block" height="500px" alt="Third slide" style="object-fit: scale-down;">
+                  <div class="carousel-caption bottom-0">
+                    <h4>Coffin mask of Queen Sat-Djehutis</h4>
+                  </div>
+                  </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselId-2" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselId-2" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="row gy-3">
+          <div class="col-sm">
+            <div class="card bg-light h-100">
+              <div class="card-body">
+
+                <h3 class="card-title">Museum and Exhibition Information</h3>
+
+                <p>The State Museum of Egyptian Art (Staatliches Museum Ägyptischer Kunst) opened at its present location
+                in 2013.
+                The collection itself dates back to the 19th century is one of the only museums that specializes in the
+                Art of Ancient Egypt.
+                The collection spans five millennia and features 13 thematic rooms. It also is recognized as being a
+                highly accessible museum
+                and is a must visit for all people who visit Munich.</p>
+              </div>
+            </div>
+
+      </div>
+    </div>
+    </div>
+
+  </main>
+  <footer>
+    <!-- place footer here -->
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+  <!-- Scripts -->
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+
+  <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoibmF0YWxpZWVvZGVsbCIsImEiOiJjbGQ3cjFjcTIwaGtpM29wYnYxYmphNTI1In0.WYC-Uq7nEMtvbvt0MwbrIw';
+    var map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/natalieeodell/clbc4uhqm002914ph7g0he3s2',
+      center: [11.567, 48.147], // [Longitude, Latitude]
+      zoom: 15.5 // Initial zoom
+    });
+  </script>
+</body>
+
+</html>

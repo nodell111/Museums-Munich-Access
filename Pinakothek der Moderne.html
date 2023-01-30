@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Pinakothek der Moderne</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <!-- Styles -->
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+  <link href="carousel.css" rel="stylesheet" />
+
+  <style>
+    /* important for carousel navigation buttons to appear on white background */
+    .carousel-control-next,
+    .carousel-control-prev
+        {filter: invert(100%);}
+    /* caption */
+    .carousel-caption {
+        opacity: 0;
+        -webkit-transition: all 0.2s;
+        transition: all 0.2s;
+        color: #fff;
+        }
+    .carousel-inner:hover .carousel-caption {
+        text-align: center;
+        font-size: 75px;
+        font-weight: 600;
+        color: white;
+        padding: 10px;
+        position: end;
+        justify-items: bottom;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #282828;
+        opacity: 0.75 
+        ;
+      }
+      
+
+      
+
+
+    
+
+  </style>
+
+</head>
+
+<body>
+  <header>
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" style="padding-bottom: 0.5rem">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Munich Museum Accessiblity</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index-2.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown"
+                aria-expanded="false">Museums</a>
+              <ul class="dropdown-menu" aria-labelledby="opdown01">
+                <li><a class="dropdown-item" href="State Museum of Egyptian Art.html">State Museum of Egyptian Art</a>
+                </li>
+                <li><a class="dropdown-item" href="Pinakothek der Moderne.html">Pinakothek der Moderne</a></li>
+                <li><a class="dropdown-item" href="Residenzmuseum.html">Residenzmuseum</a></li>
+                <li><a class="dropdown-item" href="Sammlung Schack.html">Sammlung Schack</a></li>
+
+
+
+              </ul>
+
+        </div>
+      </div>
+    </nav>
+
+
+  </header>
+  <main>
+    <div class="container marketing" style="margin-top: 20px">
+      <div class="container-fluid !direction !spacing">
+        <h1 class="display-6">
+          Pinakothek der Moderne
+          <br><small class="text-muted">Prints & Drawings, Art, Design, Architecture</small>
+        </h1>
+
+        <hr>
+        <div class="row justify-content-start align-items-start g-2.5">
+          <!-- map - do not move -->
+          <div class="col">
+            <div id='map' style='width: 800px; height: 700px; margin: 0 auto;'></div>
+          </div>
+          <!-- end map - do not move -->
+          <hr class="featurette-divider">
+          <div class="row gy-3">
+            <div class="col-sm">
+              <div class="card bg-light h-100">
+                <div class="card-body">
+
+                  <h3 class="card-title">Getting there</h3>
+                  <p>
+                  <p><strong><em>Public Transportation</em></strong>
+                    <br><strong> U-bahn:</strong> Odeonsplatz, U3/U6 - 10 minute walk 
+                    <br>Theresienstrße, U2/U8 - 10 minute walk
+                    <br><strong>Tram:</strong> Pinakotheken, Lines 27/28
+                    <br><strong>Bus:</strong> Pinakotheken, Lines 58/100
+                    <br><strong>S-Bahn:</strong> Karlsplatz, take 27 or 28 tram
+                  </p>
+                  <p><strong><em>Parking</em></strong>
+                    <br> Lot surrounding museum only available to those with a disabled parking permit.
+                  </p>
+                  <p><strong>Barer Straße 40,
+                      <br>80333 München, Germany</strong></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="card bg-light h-100">
+                <div class="card-body">
+
+                  <h3 class="card-title">Museum Information</h3>
+                  <p>
+                  <p><strong><em>Admission Fees</em></strong>
+                    <br>Adults: 10€
+                    <br> Reduced: 7€
+                    <br> Sunday: 1€
+                    <br> Under 18: Free
+                    <br> Reduced entry for those with disability card
+                  </p>
+                  <p><strong><em>Opening Hours</em></strong>
+                    <br> Monday: Closed
+                    <br> Tuesday, Wednesday, Friday-Sunday: 10:00 to 18:00
+                    <br> Thursday: 10:00 to 20:00
+                  </p>
+                  <p><strong><em>Contact Information</em></strong>
+                    <br> +49 89 23805 360
+                    <br> buchung@pinakotheken.de
+                    <br> <a href="https://www.pinakothek-der-moderne.de" class="link-primary"> https://www.pinakothek-der-moderne.de</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+          <hr class="featurette-divider">
+          <!-- <div class="row justify-content-start align-items-start g-1"> -->
+          <div class="row">
+                <div class="col">
+                    <div id="carouselId" class="carousel slide">
+                      <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active" halign="center">
+                            <img src="moderne/3d.jpg" class="d-block" height="935px" width="1000px" alt="First slide" style="object-fit: scale-down;" >
+                            <div class="carousel-caption bottom-0">
+                            <h4>3D Floor Plan</h4>
+                          </div>
+                        </div>
+                        <div class="carousel-item"  halign=" center">
+                            <img src="moderne/GROUND.jpg" class="d-block" height="533px" width="1000px" alt="Second slide" style="object-fit: scale-down;">
+                            <div class="carousel-caption bottom-0">
+                            <h4>Ground Floor Plan</h4>
+                          </div>
+                        </div>
+                        <div class="carousel-item" halign="center">
+                            <img src="moderne/FIRST.jpg" class="d-block" height="533px" width="1000px" alt="Third slide" style="object-fit: scale-down;">
+                            <div class="carousel-caption bottom-0">
+                            <h4>First Floor Plan</h4>
+                          </div>
+                        </div>
+                        <div class="carousel-item"  halign=" center">
+                            <img src="moderne/BASE.jpg" class="d-block" height="533px" width="1000px" alt="Second slide" style="object-fit: scale-down;">
+                            <div class="carousel-caption bottom-0">
+                            <h4>Basement Floor Plan </h4>
+                          </div>
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                  </div>
+            </div>
+        <div class="row gy-3">
+          <div class="col-sm">
+            <div class="card bg-light h-100">
+              <div class="card-body">
+
+                <h3 class="card-title">General Accessiblity Information</h3>
+                <ul>
+                  <li>Tours: Variety of tours available including audio guided tours for the visually impaired and tours in German Sign Language for the deaf. 
+                    Information for booking can be found <a href="https://www.pinakothek-der-moderne.de/en/inclusion-intercultural/" class="link-primary"> here.</a>
+                  </li>
+                  <li>Accessible Toilet: Available at basement level </li>
+                  <li>Elevator: Two elevators in building providing access to entire museum. Elevator for access to Design Museum 
+                    is available near Barer Straße entrance and requires inquiring at information desk to access. </li>
+                  <li>Guide Dogs: Allowed if certification can be provided </li>
+                  <li>Barrier free access at Barer Straße and the corner of Gabelsbergerstraße and Türkenstraße
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card bg-light h-100">
+              <div class="card-body">
+
+                <h3 class="card-title">Information for Blind and Visually Impaired</h3>
+
+                <ul>
+                  <li>Tactile orientation map of museum can be obtained at the information desk
+                    <li> Contact museum if interested in special audio tour</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card bg-light h-100">
+              <div class="card-body">
+
+                <h3 class="card-title">Information for Mobility Impaired</h3>
+
+                <ul>
+                  <li>Two wheelchairs are available at information desk</li>
+                  <li>Lightweight, portable chairs available to bring into exhibition rooms</li>
+                  <li>Entire museum is accessible</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        
+      </div>
+      <hr class="featurette-divider">
+      <div class="row justify-content-center align-items-center g-2">
+        <div class="row">
+          <div class="col">
+            <div id="carouselId-2" class="carousel slide">
+              <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active" halign="center">
+                  <img src="MAIN EHIBITS IMAGES/MODERN/mix_match.jpeg" class="d-block" height="500px" alt="First slide" style="object-fit: scale-down;" >
+                  <div class="carousel-caption bottom-0">
+                    <h4>Mix & Match Exhibit</h4>
+                    <p>Exhibition with an unconventional juxtaposition of works, this image showcases works of Caroll Dunham, Tschabalala Self and Markus Selg </p>
+                  </div>
+                </div>
+                <div class="carousel-item"  halign=" center">
+                  <img src="MAIN EHIBITS IMAGES/MODERN/design.jpeg" class="d-block" height="500px" alt="Second slide" style="object-fit: scale-down;">
+                  <div class="carousel-caption bottom-0">
+                    <h4>Die Neue Sammlung - The Design Museum</h4>
+                    <p>Located at the basement level of the Museum, exhibits 120,000+ design objects</p>
+                  </div>
+                </div>
+                <div class="carousel-item" halign="center">
+                  <img src="MAIN EHIBITS IMAGES/MODERN/DEPARTURE.jpg" class="d-block" height="500px" alt="Third slide" style="object-fit: scale-down;">
+                  <div class="carousel-caption bottom-0">
+                    <h4>Max Beckmann - Departure</h4>
+                    <p>Current special exhibit featuring the works of Max Beckmann primarily focused on travel. Additional ticket is required for access. </p>
+                  </div>
+                  </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselId-2" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselId-2" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="row gy-3">
+          <div class="col-sm">
+            <div class="card bg-light h-100">
+              <div class="card-body">
+
+                <h3 class="card-title">Museum and Exhibition Information</h3>
+
+                <p>The Pinakothek der Moderne is a special museum as it houses four different museums under one roof. 
+                    The four museums include a collection of Modern Art, a collection of Design, a collection of Printed and Drawn work, 
+                    and a collection of Architecture. This in addition to the buildings unique architecture make it a special museum and a must visit for lovers of contemporary and modern works, in addition to this the museum is considered to be highly accessible to patrons with disabilities. </p>
+              </div>
+            </div>
+
+      </div>
+    </div>
+    </div>
+
+  </main>
+  <footer>
+    <!-- place footer here -->
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+  <!-- Scripts -->
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+
+  <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoibmF0YWxpZWVvZGVsbCIsImEiOiJjbGQ3cjFjcTIwaGtpM29wYnYxYmphNTI1In0.WYC-Uq7nEMtvbvt0MwbrIw';
+    var map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/natalieeodell/clbc4uhqm002914ph7g0he3s2',
+      center: [11.5723, 48.146], // [Longitude, Latitude]
+      zoom: 15.5 // Initial zoom
+    });
+  </script>
+</body>
+
+</html>
